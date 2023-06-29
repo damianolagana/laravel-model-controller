@@ -10,6 +10,15 @@
             </div>
         </div>
     </div>
+    <div class="row g-4">
+        <div class="col">
+            @foreach ($movies as $movie)
+                <div >
+                    <h2>{{$movie->title}} / {{$movie->original_title}}</h2>
+                    <span>{{$movie->vote}}</span>
+                </div>
+            @endforeach
+        </div>
 
 </div>
 @endsection
